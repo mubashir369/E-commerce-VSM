@@ -1,4 +1,8 @@
+"use client";
+
+import Branches from "@/components/branch/Branches";
 import Image from "next/image";
+
 
 export default function HomePage() {
   return (
@@ -13,8 +17,7 @@ export default function HomePage() {
 
         <div className="relative z-10">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
-            Welcome to{" "}
-            <span className="text-yellow-400">Kyries Ventures</span>
+            Welcome to <span className="text-yellow-400">Kyries Ventures</span>
           </h1>
           <p className="text-lg md:text-xl mb-6 max-w-2xl mx-auto">
             Your trusted marketplace. Shop from our branches across Kerala with
@@ -37,54 +40,8 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Branch Logos Section */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <h2 className="text-3xl font-bold text-center text-red-700 mb-12">
-          Our Branches
-        </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-center">
-          <div className="flex flex-col items-center">
-            <Image
-              src="/branches/main-branch.png"
-              alt="Main Branch"
-              width={120}
-              height={120}
-              className="rounded-xl shadow-md"
-            />
-            <p className="mt-4 font-medium">Main Branch</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <Image
-              src="/branches/calicut.png"
-              alt="Calicut Branch"
-              width={120}
-              height={120}
-              className="rounded-xl shadow-md"
-            />
-            <p className="mt-4 font-medium">Calicut</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <Image
-              src="/branches/kochi.png"
-              alt="Kochi Branch"
-              width={120}
-              height={120}
-              className="rounded-xl shadow-md"
-            />
-            <p className="mt-4 font-medium">Kochi</p>
-          </div>
-          <div className="flex flex-col items-center">
-            <Image
-              src="/branches/palakkad.png"
-              alt="Palakkad Branch"
-              width={120}
-              height={120}
-              className="rounded-xl shadow-md"
-            />
-            <p className="mt-4 font-medium">Palakkad</p>
-          </div>
-        </div>
-      </section>
+      {/* Branches Section */}
+      <Branches />
 
       {/* Call to Action Section */}
       <section className="bg-red-700 text-white text-center py-16 px-6">
