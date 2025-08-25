@@ -1,8 +1,9 @@
 "use client";
 
 import Branches from "@/components/branch/Branches";
-import Image from "next/image";
+import Products from "@/components/product/Products";
 
+import Image from "next/image";
 
 export default function HomePage() {
   return (
@@ -12,7 +13,6 @@ export default function HomePage() {
         className="relative flex flex-col items-center justify-center text-center px-6 py-32 text-white bg-cover bg-center"
         style={{ backgroundImage: "url('/carousel-1.jpg')" }}
       >
-        {/* Overlay */}
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
 
         <div className="relative z-10">
@@ -42,6 +42,9 @@ export default function HomePage() {
 
       {/* Branches Section */}
       <Branches />
+
+      {/* Products Section with horizontal scroll */}
+      <Products />
 
       {/* Call to Action Section */}
       <section className="bg-red-700 text-white text-center py-16 px-6">
