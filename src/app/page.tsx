@@ -41,7 +41,7 @@ export default function HomePage() {
       </section>
 
       {/* Branches Section */}
-      <Branches />
+    
 
       {/* Products Section with horizontal scroll */}
       <Products />
