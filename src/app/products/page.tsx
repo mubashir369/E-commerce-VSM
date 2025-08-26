@@ -6,6 +6,7 @@ import { FaTimes } from "react-icons/fa"
 import Filters from "../../components/product/Filters"
 import rawProducts from "../../data/products.json"
 import type { Product } from "../../types/product/product"
+import Link from "next/link"
 
 const allProducts: Product[] = rawProducts as Product[]
 
@@ -40,37 +41,36 @@ export default function ProductPage() {
 <main className="flex-1 p-4 md:ml-64">
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
     {filteredProducts.map(p => (
-      <div
+      <Link
         key={p.id}
+        href={`/products/${p.id}`}
         className="border border-red-600 p-4 rounded-lg shadow hover:shadow-lg 
-                   flex flex-col transition-all bg-white"
+                   flex flex-col items-center transition-all bg-white cursor-pointer"
       >
-        {/* Product Image */}
         <img
           src={p.image}
           alt={p.name}
           className="w-full h-48 object-cover rounded mb-2"
         />
-
+        
         {/* Product Name */}
-        <h3 className="font-bold text-red-600 text-lg text-center">{p.name}</h3>
+        <h3 className="font-bold text-red-600 text-lg">{p.name}</h3>
 
-        {/* Row: Price + Rating */}
-        <div className="flex items-center justify-between w-full mt-2">
-          {/* MRP + Price */}
+        {/* Price + MRP + Rating Row */}
+        <div className="flex justify-between w-full mt-1">
           <div className="flex items-center space-x-2">
             {p.mrp && (
               <p className="text-red-500 line-through text-sm">₹{p.mrp}</p>
             )}
             <p className="text-green-600 font-bold text-md">₹{p.price}</p>
           </div>
-
-          {/* Rating */}
           <div className="flex items-center">
             {Array.from({ length: 5 }).map((_, i) => (
               <span
                 key={i}
-                className={`text-yellow-500 text-sm ${i < (p.rating || 0) ? "opacity-100" : "opacity-30"}`}
+                className={`text-yellow-500 text-sm ${
+                  i < (p.rating || 0) ? "opacity-100" : "opacity-30"
+                }`}
               >
                 ★
               </span>
@@ -78,16 +78,22 @@ export default function ProductPage() {
           </div>
         </div>
 
-        {/* Buttons Row */}
+        {/* Buttons */}
         <div className="flex space-x-2 mt-3 w-full">
-          <button className="flex-1 px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition">
+          <button
+            className="flex-1 px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700 transition"
+            onClick={(e) => e.preventDefault()} // prevent triggering Link
+          >
             Buy Now
           </button>
-          <button className="flex-1 px-3 py-1 border border-red-600 text-red-600 rounded hover:bg-red-600 hover:text-white transition">
+          <button
+            className="flex-1 px-3 py-1 border border-red-600 text-red-600 rounded hover:bg-red-600 hover:text-white transition"
+            onClick={(e) => e.preventDefault()}
+          >
             Add to Cart
           </button>
         </div>
-      </div>
+      </Link>
     ))}
   </div>
 </main>

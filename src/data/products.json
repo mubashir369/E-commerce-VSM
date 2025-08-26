@@ -12,6 +12,13 @@
     "rating": 4.8,
     "reviews": 25,
     "image": "/products/0.jpg",
+    "gallery": [
+      "/products/0.jpg",
+      "/products/11.jpg",
+      "/products/12.jpg",
+      "/products/13.jpg",
+      "/products/14.jpg"
+    ],
     "sizes": ["One Size"],
     "colors": ["Gold", "Red"]
   },
@@ -28,6 +35,13 @@
     "rating": 4.5,
     "reviews": 18,
     "image": "/products/1.jpg",
+    "gallery": [
+      "/products/1.jpg",
+      "/products/15.jpg",
+      "/products/16.jpg",
+      "/products/17.jpg",
+      "/products/18.jpg"
+    ],
     "sizes": ["S", "M", "L"],
     "colors": ["Red", "Gold"]
   },
@@ -44,6 +58,13 @@
     "rating": 4.2,
     "reviews": 12,
     "image": "/products/2.jpg",
+    "gallery": [
+      "/products/2.jpg",
+      "/products/19.jpg",
+      "/products/20.jpg",
+      "/products/20(2).jpg",
+      "/products/20.webp"
+    ],
     "sizes": ["One Size"],
     "colors": ["White"]
   },
@@ -60,6 +81,13 @@
     "rating": 4.7,
     "reviews": 30,
     "image": "/products/3.jpg",
+    "gallery": [
+      "/products/3.jpg",
+      "/products/21-1.jpeg",
+      "/products/21-2.jpeg",
+      "/products/21-3.jpeg",
+      "/products/21-4.jpeg"
+    ],
     "sizes": ["One Size"],
     "colors": ["Black", "Gold"]
   },
@@ -76,6 +104,13 @@
     "rating": 4.4,
     "reviews": 10,
     "image": "/products/9.jpg",
+    "gallery": [
+      "/products/9.jpg",
+      "/products/6.jpg",
+      "/products/7.jpg",
+      "/products/8.jpg",
+      "/products/19.jpg"
+    ],
     "sizes": ["One Size"],
     "colors": ["White", "Red", "Gold"]
   },
@@ -92,6 +127,13 @@
     "rating": 4.6,
     "reviews": 15,
     "image": "/products/8.jpg",
+    "gallery": [
+      "/products/8.jpg",
+      "/products/11.jpg",
+      "/products/12.jpg",
+      "/products/13.jpg",
+      "/products/14.jpg"
+    ],
     "sizes": ["One Size"],
     "colors": ["Red", "Brown", "Black"]
   },
@@ -108,6 +150,13 @@
     "rating": 4.9,
     "reviews": 22,
     "image": "/products/6.jpg",
+    "gallery": [
+      "/products/6.jpg",
+      "/products/15.jpg",
+      "/products/16.jpg",
+      "/products/17.jpg",
+      "/products/18.jpg"
+    ],
     "sizes": ["One Size"],
     "colors": ["Gold", "Red"]
   },
@@ -124,6 +173,13 @@
     "rating": 4.3,
     "reviews": 8,
     "image": "/products/7.jpg",
+    "gallery": [
+      "/products/7.jpg",
+      "/products/19.jpg",
+      "/products/20.webp",
+      "/products/21.webp",
+      "/products/kids1.webp"
+    ],
     "sizes": ["One Size"],
     "colors": ["Red", "Gold", "Black"]
   }
