@@ -1,9 +1,7 @@
 "use client";
 
-import Branches from "@/components/branch/Branches";
 import Products from "@/components/product/Products";
-
-import Image from "next/image";
+import Link from "next/link";
 
 export default function HomePage() {
   return (
@@ -24,24 +22,21 @@ export default function HomePage() {
             quality products and faster delivery.
           </p>
           <div className="flex gap-4 justify-center">
-            <a
+            <Link
               href="/branches"
               className="bg-yellow-400 text-black px-6 py-3 rounded-xl font-semibold hover:bg-yellow-300 transition"
             >
               Choose Branch
-            </a>
-            <a
+            </Link>
+            <Link
               href="/products"
               className="bg-white text-red-700 px-6 py-3 rounded-xl font-semibold hover:bg-gray-100 transition"
             >
               Browse Products
-            </a>
+            </Link>
           </div>
         </div>
       </section>
-
-      {/* Branches Section */}
-    
 
       {/* Products Section with horizontal scroll */}
       <Products />
@@ -55,12 +50,12 @@ export default function HomePage() {
           Explore our wide range of products from multiple branches and enjoy
           seamless shopping.
         </p>
-        <a
+        <Link
           href="/products"
           className="bg-yellow-400 text-black px-8 py-3 rounded-xl font-semibold hover:bg-yellow-300 transition"
         >
           Shop Now
-        </a>
+        </Link>
       </section>
     </main>
   );
