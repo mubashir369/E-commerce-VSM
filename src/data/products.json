@@ -12,15 +12,14 @@
     "rating": 4.8,
     "reviews": 25,
     "image": "/products/0.jpg",
-    "gallery": [
-      "/products/0.jpg",
-      "/products/11.jpg",
-      "/products/12.jpg",
-      "/products/13.jpg",
-      "/products/14.jpg"
-    ],
+    "gallery": ["/products/0.jpg", "/products/11.jpg", "/products/12.jpg", "/products/13.jpg", "/products/14.jpg"],
     "sizes": ["One Size"],
-    "colors": ["Gold", "Red"]
+    "colors": ["Gold", "Red"],
+    "customerReviews": [
+      { "user": "Aisha K.", "rating": 5, "comment": "Absolutely stunning! The gold finish looks so elegant." },
+      { "user": "Meera P.", "rating": 4, "comment": "Loved it, but chain length could have been a little longer." },
+      { "user": "Saniya R.", "rating": 5, "comment": "Perfect for weddings, received so many compliments!" }
+    ]
   },
   {
     "id": 2,
@@ -35,15 +34,13 @@
     "rating": 4.5,
     "reviews": 18,
     "image": "/products/1.jpg",
-    "gallery": [
-      "/products/1.jpg",
-      "/products/15.jpg",
-      "/products/16.jpg",
-      "/products/17.jpg",
-      "/products/18.jpg"
-    ],
+    "gallery": ["/products/1.jpg", "/products/15.jpg", "/products/16.jpg", "/products/17.jpg", "/products/18.jpg"],
     "sizes": ["S", "M", "L"],
-    "colors": ["Red", "Gold"]
+    "colors": ["Red", "Gold"],
+    "customerReviews": [
+      { "user": "Priya S.", "rating": 5, "comment": "Fabric quality is superb, looks very premium." },
+      { "user": "Neha M.", "rating": 4, "comment": "Beautiful saree but blouse piece was slightly smaller." }
+    ]
   },
   {
     "id": 3,
@@ -58,15 +55,13 @@
     "rating": 4.2,
     "reviews": 12,
     "image": "/products/2.jpg",
-    "gallery": [
-      "/products/2.jpg",
-      "/products/19.jpg",
-      "/products/20.jpg",
-      "/products/20(2).jpg",
-      "/products/20.webp"
-    ],
+    "gallery": ["/products/2.jpg", "/products/19.jpg", "/products/20.jpg", "/products/20(2).jpg", "/products/20.webp"],
     "sizes": ["One Size"],
-    "colors": ["White"]
+    "colors": ["White"],
+    "customerReviews": [
+      { "user": "Rohit K.", "rating": 4, "comment": "Good quality and very classy design." },
+      { "user": "Ananya J.", "rating": 5, "comment": "Looks amazing on my dining table!" }
+    ]
   },
   {
     "id": 4,
@@ -81,15 +76,13 @@
     "rating": 4.7,
     "reviews": 30,
     "image": "/products/3.jpg",
-    "gallery": [
-      "/products/3.jpg",
-      "/products/21-1.jpeg",
-      "/products/21-2.jpeg",
-      "/products/21-3.jpeg",
-      "/products/21-4.jpeg"
-    ],
+    "gallery": ["/products/3.jpg", "/products/21-1.jpeg", "/products/21-2.jpeg", "/products/21-3.jpeg", "/products/21-4.jpeg"],
     "sizes": ["One Size"],
-    "colors": ["Black", "Gold"]
+    "colors": ["Black", "Gold"],
+    "customerReviews": [
+      { "user": "Vikram L.", "rating": 5, "comment": "Premium look, totally worth the price." },
+      { "user": "Arjun N.", "rating": 4, "comment": "Strap quality is good, but dial is a bit bigger than expected." }
+    ]
   },
   {
     "id": 5,
@@ -104,15 +97,13 @@
     "rating": 4.4,
     "reviews": 10,
     "image": "/products/9.jpg",
-    "gallery": [
-      "/products/9.jpg",
-      "/products/6.jpg",
-      "/products/7.jpg",
-      "/products/8.jpg",
-      "/products/19.jpg"
-    ],
+    "gallery": ["/products/9.jpg", "/products/6.jpg", "/products/7.jpg", "/products/8.jpg", "/products/19.jpg"],
     "sizes": ["One Size"],
-    "colors": ["White", "Red", "Gold"]
+    "colors": ["White", "Red", "Gold"],
+    "customerReviews": [
+      { "user": "Shalini P.", "rating": 5, "comment": "Very cute mug, I use it daily!" },
+      { "user": "Kiran D.", "rating": 4, "comment": "Nice finish but slightly smaller than expected." }
+    ]
   },
   {
     "id": 6,
@@ -127,15 +118,13 @@
     "rating": 4.6,
     "reviews": 15,
     "image": "/products/8.jpg",
-    "gallery": [
-      "/products/8.jpg",
-      "/products/11.jpg",
-      "/products/12.jpg",
-      "/products/13.jpg",
-      "/products/14.jpg"
-    ],
+    "gallery": ["/products/8.jpg", "/products/11.jpg", "/products/12.jpg", "/products/13.jpg", "/products/14.jpg"],
     "sizes": ["One Size"],
-    "colors": ["Red", "Brown", "Black"]
+    "colors": ["Red", "Brown", "Black"],
+    "customerReviews": [
+      { "user": "Sameer T.", "rating": 5, "comment": "Leather quality is great, feels durable." },
+      { "user": "Deepak K.", "rating": 4, "comment": "Good wallet, but stitching could be better." }
+    ]
   },
   {
     "id": 7,
@@ -150,15 +139,13 @@
     "rating": 4.9,
     "reviews": 22,
     "image": "/products/6.jpg",
-    "gallery": [
-      "/products/6.jpg",
-      "/products/15.jpg",
-      "/products/16.jpg",
-      "/products/17.jpg",
-      "/products/18.jpg"
-    ],
+    "gallery": ["/products/6.jpg", "/products/15.jpg", "/products/16.jpg", "/products/17.jpg", "/products/18.jpg"],
     "sizes": ["One Size"],
-    "colors": ["Gold", "Red"]
+    "colors": ["Gold", "Red"],
+    "customerReviews": [
+      { "user": "Pooja R.", "rating": 5, "comment": "Super pretty, perfect for parties!" },
+      { "user": "Anjali M.", "rating": 5, "comment": "Looks even better than the pictures!" }
+    ]
   },
   {
     "id": 8,
@@ -173,14 +160,12 @@
     "rating": 4.3,
     "reviews": 8,
     "image": "/products/7.jpg",
-    "gallery": [
-      "/products/7.jpg",
-      "/products/19.jpg",
-      "/products/20.webp",
-      "/products/21.webp",
-      "/products/kids1.webp"
-    ],
+    "gallery": ["/products/7.jpg", "/products/19.jpg", "/products/20.webp", "/products/21.webp", "/products/kids1.webp"],
     "sizes": ["One Size"],
-    "colors": ["Red", "Gold", "Black"]
+    "colors": ["Red", "Gold", "Black"],
+    "customerReviews": [
+      { "user": "Ramesh S.", "rating": 4, "comment": "Good quality tie, very stylish." },
+      { "user": "Karthik P.", "rating": 5, "comment": "Loved it! Looks premium with my suit." }
+    ]
   }
 ]

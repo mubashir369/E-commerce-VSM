@@ -28,7 +28,7 @@ export default function ProductPage() {
   }
 
   return (
-    <div className="flex min-h-screen bg-white">
+    <div className="flex min-h-screen bg-white ">
       {/* Filter Sidebar (Desktop) */}
       <aside className="hidden md:block w-64 flex-shrink-0 p-4 border-r border-red-600 
                        fixed top-16 left-0 h-[calc(100vh-4rem)] 
@@ -38,7 +38,7 @@ export default function ProductPage() {
       </aside>
 
       {/* Products Section */}
-<main className="flex-1 p-4 md:ml-64">
+<main className="flex-1 p-4 md:ml-64 mt-20">
   <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
     {filteredProducts.map(p => (
       <Link
