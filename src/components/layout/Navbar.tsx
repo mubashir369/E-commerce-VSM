@@ -4,12 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, ShoppingCart, Heart } from "lucide-react";
-import AuthModal from "@/components/ui/AuthModal"; // ✅ adjust path
+import AuthModal from "@/components/ui/AuthModal"; 
 import CartDrawer from "../ui/CartDrawer";
+import WishlistDrawer from "../ui/WishlistDrawer";
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false); // mobile menu
-  const [isCartOpen, setIsCartOpen] = useState(false); // cart drawer
+  const [isWishlistOpen, setIsWishlistOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false); 
+  const [isCartOpen, setIsCartOpen] = useState(false); 
   const [showAuthModal, setShowAuthModal] = useState(false);
 
   // 🔹 Replace with real auth/session logic
@@ -20,6 +22,20 @@ export default function Navbar() {
   };
 
   // Dummy cart data (replace later with real state from context / API)
+    const wishlistItems = [
+    {
+      id: 101,
+      name: "Classic Watch",
+      price: 150,
+      image: "/products/9.jpg",
+    },
+    {
+      id: 102,
+      name: "Handbag",
+      price: 200,
+      image: "/products/11.jpg",
+    },
+  ];
   const cartItems = [
     {
       id: 6,
@@ -191,16 +207,22 @@ export default function Navbar() {
               ) : (
                 <div className="flex items-center gap-5">
                   {/* Wishlist */}
-                  <Link
-                    href="/wishlist"
-                    className="relative text-white hover:text-yellow-400"
-                  >
-                    <Heart size={22} />
-                    {/* Badge */}
-                    <span className="absolute -top-2 -right-2 bg-yellow-400 text-red-700 text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
-                      3 {/* dynamically replace with wishlist count */}
-                    </span>
-                  </Link>
+                  <button
+        onClick={() => setIsWishlistOpen(true)}
+        className="relative text-white hover:text-yellow-400"
+      >
+        ❤️
+        <span className="absolute -top-2 -right-2 bg-yellow-400 text-red-700 text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+          {wishlistItems.length}
+        </span>
+      </button>
+
+      {/* Wishlist Drawer */}
+      <WishlistDrawer
+        isOpen={isWishlistOpen}
+        onClose={() => setIsWishlistOpen(false)}
+        items={wishlistItems}
+      />
 
                   {/* Cart */}
                   <button
